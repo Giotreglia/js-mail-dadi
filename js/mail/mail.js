@@ -17,9 +17,14 @@ const mailAutorizzate = ["utente1@boolean.it", "utente2@boolean.it", "utente3@bo
 //Controllo presenza mail utente nella lista mail autorizzate
 
 for (let i = 0; i < mailAutorizzate.length; i++) {
-    if (mailUtente == mailAutorizzate[i]) {
+    if (mailUtente !== mailAutorizzate[i]) {
+
+        console.log ("Email non corretta")
+    } else if (mailUtente == mailAutorizzate[i]) {
         console.log ("Email corretta")
-    } 
+    }
+    
+    
 }
 
 
